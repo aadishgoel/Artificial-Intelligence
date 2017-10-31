@@ -6,7 +6,6 @@ import pywsd
 #p = input() 
 #p = 'I was walking around a river bank while looking at fishes in the water.'
 p = 'I am going to bank to deposit my money'
-#p = 'I am going to bank to deposit my money and then i will go and walk around a river bank while looking at fishes in the water.'
 new= [ word for word in word_tokenize(p) if word.lower() not in stopwords.words('English') and word not in string.punctuation]
 new = ' '.join(new)
 for word, context in pywsd.disambiguate(new):
