@@ -5,7 +5,8 @@ import os
 
 bot = ChatBot('Bot')
 bot.set_trainer(ListTrainer)
-training_files = os.path.join(os.getcwd(),'english') #Path where training files are
+# Can Download Training Files Here: https://github.com/gunthercox/chatterbot-corpus/tree/master/chatterbot_corpus/data
+training_files = os.path.join(os.getcwd(),'english') #Path where English training files are
 
 for file in os.listdir(training_files):
     data = open(os.path.join(training_files,file)).readlines()
