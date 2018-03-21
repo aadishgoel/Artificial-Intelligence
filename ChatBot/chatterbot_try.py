@@ -11,10 +11,10 @@ for file in os.listdir(training_files):
     data = open(os.path.join(training_files,file)).readlines()
     bot.train(data)
     print('Talk to ChatBot')
-    try:
-        while True:
-            text = input('You: ')
-            reply = bot.get_response(text)
-            print('Bot:',reply)
-    except:
+try:
+    while True:
+        text = input('You: ')
+        reply = bot.get_response(text)
+        print('Bot:',reply)
+except:
         print('GoodBye, Take Care')
