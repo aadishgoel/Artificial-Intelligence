@@ -11,7 +11,7 @@ training_files = os.path.join(os.getcwd(),'english') #Path where English trainin
 for file in os.listdir(training_files):
     data = open(os.path.join(training_files,file)).readlines()
     bot.train(data)
-    print('Talk to ChatBot')
+print('Talk to ChatBot')
 try:
     while True:
         text = input('You: ')
